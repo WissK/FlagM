@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '4.10.0',
-        'version' => '4.10.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '3da222dd98fbefbf06e556f7497e85b49ef4e53f',
         'name' => 'slim/slim',
         'dev' => true,
     ),
@@ -37,6 +37,24 @@
             'reference' => '9d94dc0154230ac39e5bf89398b324a86f63f765',
             'dev_requirement' => true,
         ),
+        'guzzlehttp/guzzle' => array(
+            'pretty_version' => '7.4.2',
+            'version' => '7.4.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../guzzlehttp/guzzle',
+            'aliases' => array(),
+            'reference' => 'ac1ec1cd9b5624694c3a40be801d94137afb12b4',
+            'dev_requirement' => false,
+        ),
+        'guzzlehttp/promises' => array(
+            'pretty_version' => '1.5.1',
+            'version' => '1.5.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../guzzlehttp/promises',
+            'aliases' => array(),
+            'reference' => 'fe752aedc9fd8fcca3fe7ad05d419d32998a06da',
+            'dev_requirement' => false,
+        ),
         'guzzlehttp/psr7' => array(
             'pretty_version' => '2.2.1',
             'version' => '2.2.1.0',
@@ -44,7 +62,7 @@
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
             'aliases' => array(),
             'reference' => 'c94a94f120803a18554c1805ef2e539f8285f9a2',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'httpsoft/http-message' => array(
             'pretty_version' => '1.0.9',
@@ -262,6 +280,21 @@
             'reference' => 'c71ecc56dfe541dbd90c5360474fbc405f8d5963',
             'dev_requirement' => false,
         ),
+        'psr/http-client' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-client',
+            'aliases' => array(),
+            'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
+            'dev_requirement' => false,
+        ),
+        'psr/http-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
         'psr/http-factory' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -272,7 +305,7 @@
             'dev_requirement' => false,
         ),
         'psr/http-factory-implementation' => array(
-            'dev_requirement' => true,
+            'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
             ),
@@ -287,7 +320,7 @@
             'dev_requirement' => false,
         ),
         'psr/http-message-implementation' => array(
-            'dev_requirement' => true,
+            'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
             ),
@@ -326,7 +359,7 @@
             'install_path' => __DIR__ . '/../ralouphie/getallheaders',
             'aliases' => array(),
             'reference' => '120b605dfeb996808c31b6477290a714d356e822',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
             'pretty_version' => '1.0.1',
@@ -491,12 +524,12 @@
             'dev_requirement' => true,
         ),
         'slim/slim' => array(
-            'pretty_version' => '4.10.0',
-            'version' => '4.10.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '3da222dd98fbefbf06e556f7497e85b49ef4e53f',
             'dev_requirement' => false,
         ),
         'squizlabs/php_codesniffer' => array(
@@ -507,6 +540,15 @@
             'aliases' => array(),
             'reference' => '5e4e71592f69da17871dba6e80dd51bce74a351a',
             'dev_requirement' => true,
+        ),
+        'symfony/deprecation-contracts' => array(
+            'pretty_version' => 'v3.0.1',
+            'version' => '3.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
+            'aliases' => array(),
+            'reference' => '26954b3d62a6c5fd0ea8a2a00c0353a14978d05c',
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
             'pretty_version' => 'v1.25.0',
