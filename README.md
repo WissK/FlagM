@@ -8,7 +8,7 @@
 
 This application allows to create/read/update/delete records into the offline-db and synchronize the records to an online database. There are two ways to synchronize:
   1- By calling the "9- Synchronize Offine to Online" request in postman.
-  2- By calling the "9- Call api from another app to sync" request in postman. If you wish to use this method you will have to run the other application "flagmtask online" on another port 8000.
+  2- By calling the "9- Call api from another app to sync" request in postman. If you wish to use this method you will have to run the other application "flagmtask online" on another port 8000. the second app is on (https://github.com/WissK/FlagM2)
  
  Once the synchronization is done. The admin will receive an email (you can change the receipient of the email by changing the first parameter of the function sendVerificationEmail on line 208.
  
