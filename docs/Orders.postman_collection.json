@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "6dd89a8c-f985-45e5-a153-9577d6866611",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1- Get All Offline Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/all",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2- Get Offline Orders Not Synched",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/nosync",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"nosync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3- Get Offline Synched Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/synched",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"synched"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4- Get Offline specific order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/22",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5- Make Offline Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderto\":\"Wass\",\r\n    \"flavor\":\"Choco\",\r\n    \"quantity\":\"10\"\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/add",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6- Update Offline Order",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\":\"1\",\r\n    \"flavor\":\"Vanillaz\",\r\n    \"orderto\":\"Flag M\"\r\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/edit/22",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"edit",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7- Delete Offline Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/offline/orders/20",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"offline",
+						"orders",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8- Get All Online Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/online/orders/all",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"online",
+						"orders",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9- Synchronize Offine to Online",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/sync2",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"sync2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Call api from another app to sync",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/sync",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"sync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Call api from another app to fetch all data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/online/orders/all2",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"online",
+						"orders",
+						"all2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
